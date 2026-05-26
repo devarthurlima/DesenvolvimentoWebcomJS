@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTD</title>
+</head>
+<body>
+    <h1>Universidade do Trabalho Digital</h1>
+    <p>Formulário de Inscrição</p>
+    <ul type="none">
+        <li><a href="./index.html">início</a></li>
+        <li><a href="./cursos.html">cursos</a></li>
+        <li><a href="#">inscrição</a></li>
+    </ul>
+<hr>
+<h4>Formulário de Inscrição</h4>
+    <form action="./index.html">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+        <input type="text" required name="nome" id="nomeId" placeholder="Nome completo">
+        <br>
+        <label for="nascimentoId">Data de Nascimento:</label>
+        <input type="date" name="nascimento" id="nascimentoId">
+        <br>
+        <label for="emailId"></label>
+        <input type="email" name="email" id="emailId" placeholder="email@email.com">
+        <br>
+        </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolaridade</legend>
+    <p>Grau de Instrução</p>
+    <select name="escolaridade" id="escolaridadeId">
+        <option value="0" disabled selected>
+            Selecione o Grau de Instrução
+        </option>
+        <option value="1">Não Alfabetizado</option>
+        <option value="2">Fundamental</option>
+        <option value="3">Ensino Médio</option>
+        <option value="4">Superior</option>
+        <option value="5">Pós-Graduação</option>
+        <option value="6">Mestrado</option>
+        <option value="7">Doutorado</option>
+    </select>
+    <p>Você tem Conhecimento Prévio em Programação? </p>
+    <label for="">
+        Sim
+        <input type="radio" value="sim" name="conhecimentoPrévio" id="simId">
+    </label>
+     <label for="">
+        Não
+        <input type="radio" value="não" name="conhecimentoPrévio" id="simId">
+    </label>
+        </fieldset>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>

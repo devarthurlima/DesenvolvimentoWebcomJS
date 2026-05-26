@@ -1,0 +1,70 @@
+header {
+    width: 100vw;
+    height: 40px;
+    text-align: right;
+    border: 1px solid black;
+}
+
+header i {
+    font-size: 30px;
+}
+
+main {
+    box-sizing: border-box;
+    margin: 15px;
+    display: grid;
+    grid-template-rows: 10vh 70vh 50vh 5vh 50vh;
+    grid-template-columns: 48vw 48vw;
+    gap: 10px;
+    grid-template-areas: 
+        "um um"
+        "dois dois"
+        "tres cinco"
+        "quatro seis"
+        "sete oito";
+}
+
+#inicio {
+    background-color: blue;
+    grid-area: um;
+}
+
+#figura-principal {
+    background-color: chocolate;
+    grid-area: dois;
+}
+
+#um {
+    width: 0;
+    height: 0;
+    border-left: 240px solid transparent;
+    border-right: 240px solid transparent;
+    border-bottom: 240px solid #5386e4;
+    grid-area: tres;
+}
+
+#legenda-um {
+    background-color: chartreuse;
+    grid-area: quatro;
+}
+
+#dois {
+    background-color: crimson;
+    border-radius: 50%;
+    grid-area: cinco;
+}
+
+#legenda-dois {
+    background-color: chartreuse;
+    grid-area: seis;
+}
+
+#tres {
+    background-color: crimson;
+    grid-area: sete;
+}
+
+#quatro {
+    background-color: crimson;
+    grid-area: oito;
+}
