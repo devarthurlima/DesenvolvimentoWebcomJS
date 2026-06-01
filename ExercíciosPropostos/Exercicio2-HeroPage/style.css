@@ -1,3 +1,53 @@
+.tema-roxo {
+  --cor-tema: oklch(0.65 0.25 290);
+  --cor-fundo-card: oklch(0.15 0.08 290);
+}
+
+.tema-azul {
+  --cor-tema: oklch(0.65 0.25 240);
+  --cor-fundo-card: oklch(0.15 0.08 240);
+}
+
+.tema-ciano {
+  --cor-tema: oklch(0.65 0.25 200);
+  --cor-fundo-card: oklch(0.15 0.08 200);
+}
+
+.tema-verde {
+  --cor-tema: oklch(0.65 0.25 140);
+  --cor-fundo-card: oklch(0.15 0.08 140);
+}
+
+.tema-amarelo {
+  --cor-tema: oklch(0.65 0.25 80);
+  --cor-fundo-card: oklch(0.15 0.08 80);
+}
+
+.tema-laranja {
+  --cor-tema: oklch(0.65 0.25 45);
+  --cor-fundo-card: oklch(0.15 0.08 45);
+}
+
+.tema-vermelho {
+  --cor-tema: oklch(0.6 0.25 20);
+  --cor-fundo-card: oklch(0.15 0.08 20);
+}
+
+.tema-rosa {
+  --cor-tema: oklch(0.6 0.25 340);
+  --cor-fundo-card: oklch(0.15 0.08 340);
+}
+
+.tema-magenta {
+  --cor-tema: oklch(0.6 0.25 315);
+  --cor-fundo-card: oklch(0.15 0.08 315);
+}
+
+.tema-vinho {
+  --cor-tema: oklch(0.4 0.2 10);
+  --cor-fundo-card: oklch(0.1 0.05 10);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +61,7 @@ body {
 .card {
   display: flex;
   align-items: center;
-  background-color: #d1afff;
+  background-color: var(--cor-fundo-card);
   padding: 40px;
   height: 620px;
 }
@@ -20,6 +70,8 @@ body {
   width: 55%;
   height: 90%;
   overflow: hidden;
+  border-radius: 35px;
+  background-color: var(--cor-tema);
 }
 
 .image img {
@@ -27,8 +79,8 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 35px;
-  filter: sepia(130%) hue-rotate(230deg) saturate(150%) brightness(90%) contrast(99%);
+  filter: grayscale(1) contrast(1.1);
+  mix-blend-mode: hard-light;
 }
 
 .conteudo {
@@ -40,26 +92,30 @@ body {
 .titulo {
   font-size: 40px;
   font-weight: bolder;
-  color: #333;
+  color: var(--cor-tema);
   margin-bottom: 20px;
 }
 
 .descricao {
   font-size: 16px;
-  color: #333;
+  color: #ffffffc2;
   margin-bottom: 30px;
 }
 
 .botao {
   padding: 10px 20px;
-  background-color: #333;
-  color: #ffffffe1;
+  background-color: var(--cor-tema);
+  color: var(--cor-fundo-card);
   text-decoration: none;
   border-radius: 24px;
   font-size: 20px;
   border: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .botao:hover {
-  background-color: #555;
+  background-color: transparent;
+  color: var(--cor-tema);
+  border-color: var(--cor-tema);
 }
