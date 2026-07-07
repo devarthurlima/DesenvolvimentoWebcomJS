@@ -21,7 +21,7 @@ class Pessoa {
     return (
       typeof pessoa === typeof this &&
       pessoa.nome === this.nome &&
-      pessoa.pai === this.pai &&
+      pessoa.pai === this.pai ||
       pessoa.mae === this.mae
     )}; 
 

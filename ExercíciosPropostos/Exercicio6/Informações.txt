@@ -1,0 +1,25 @@
+DESAFIO OO PROJETO GARAGEM
+1 - criar o package json
+- crie o arquivo main.js
+- abra o terminal dentro da pasta do desafio e execute o comando: npm init -y
+- entre no arquivo gerado (package.json) e mude o type de "commonjs" para "module"
+2 - crie a classe Pessoa com as seguintes propriedades e métodos
+id: number, cpf: string, nome, string, dataNascimento
+calculaIdade() retorna a idade calculada a partir da data de nascimento
+3 - crie a classe cliente herdando de pessoa e implementando os atributos
+cadastro: string, tipoCadastro:[comum, funcionario, prioridade], veiculos: [Carro]
+4 - crie a classe Carro com as seguintes propriedades
+placa: string, modelo: string
+5 - crie a classe vaga com as seguintes propriedades:
+id: number, numero: string, tipo: [comum, funcionario, prioridade], status: [ocupada,livre]
+6 - crie a classe cancela com as seguintes propriedade e métodos:
+id: number, carro: Carro, vaga: Vaga, entrada: dateTime, saida: dateTime
+estacionar(vaga)
+sair(saida, vaga)
+Contexto:
+quando o usuário entra no estacionamento cria a cancela com o construtor pedindo(id,carro,entrada)
+quando o usuário para na vaga chamar o método estacionar(vaga) que verifica que o tipo do usuário
+é compátivel com a vaga e se ela está vaga, se não for retorna erro, se for muda o status da vaga
+para ocupada.
+quando o usário sair chama o método sair que seta o valor de saida para cancela e muda o status da
+vaga para livre.
