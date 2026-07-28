@@ -1,11 +1,16 @@
 import express from "express";
 import cors from "cors";
-
-import alunoRoutes from "./src/routes/clienteRoutes.js";
+import alunoRoutes from "./src/routes/alunoRoutes.js";
 
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+  origin: "http://localhost:5173",
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 app.use("/api/alunos", alunoRoutes);
