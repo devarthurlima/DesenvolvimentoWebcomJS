@@ -1,1 +1,21 @@
+.tabela-container {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
 
+.tabela-alunos {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tabela-alunos th,
+.tabela-alunos td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.tabela-alunos th {
+  background-color: #f5f5f5;
+}

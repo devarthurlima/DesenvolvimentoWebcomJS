@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { retornarAlunos, removerAluno } from "../../api/alunorequest";
+import "./Tabela.css";
+
 function Tabela() {
   const nav = useNavigate();
   const [alunos, setAlunos] = useState([]);
@@ -22,8 +24,8 @@ function Tabela() {
     console.log(alunos);
   }, []);
   return (
-    <>
-      <table border={1}>
+    <div className="tabela-container">
+      <table className="tabela-alunos">
         <thead>
           <tr>
             <th>id</th>
@@ -64,7 +66,7 @@ function Tabela() {
           ))}
         </tbody>
       </table>
-    </>
+    </div>
   );
 }
 export default Tabela;

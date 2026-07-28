@@ -6,6 +6,7 @@ import Alunos from "./paginas/Alunos";
 import AlunosTabela from "./paginas/AlunosTabela";
 import AlunoCadastro from "./paginas/AlunoCadastro";
 import AlunoInfo from "./paginas/AlunoInfo";
+import Cursos from "./paginas/Cursos";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path=":id" element={<AlunoInfo />} />
           <Route path="adicionar" element={<AlunoCadastro />} />
         </Route>
+        <Route path="/cursos" element={<Cursos />} />
       </Routes>
     </>
   );
